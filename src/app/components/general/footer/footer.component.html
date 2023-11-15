@@ -1,0 +1,26 @@
+<footer>
+    <div [@animateFooter]>
+        <ul class="footer-left-bar d-none d-md-block">
+            <li>
+                <a (click)='analyticsService.sendAnalyticEvent("click_github", "footer", "github")' href="https://github.com/Myndband" target='_blank'>
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a (click)='analyticsService.sendAnalyticEvent("click_linkedin", "footer", "github")' href="https://www.linkedin.com/in/shilratna-chawhan-8448761b1/" target='_blank'>
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "contact", "email")' href="mailto:shilratna516@gmail.com" target="_blank">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-credits text-center" >
+        <div>Built with Angular</div>
+    </div>
+
+</footer>

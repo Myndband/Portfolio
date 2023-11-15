@@ -1,0 +1,187 @@
+{
+    "Header.Item1": "About me",
+    "Header.Item2": "Experience",
+    "Header.Item3": "Projects",
+    "Header.Item4": "Contact",
+    "Header.cvBtn": "Resume",
+    "Header.cvName": "Shilratna_chawhan.pdf",
+    "Banner.Pretitle": "Hello! My name is",
+    "Banner.Description": "I possess a strong understanding and proficiency in both <span class='underline'>Angular and .NET technologies</span> . With a solid grasp of <span class='underline'>TypeScript and C#</span>, In Angular my experience extends to building responsive and dynamic user interfaces using Angular Material and Bootstrap, ensuring that the end product is visually appealing and user-friendly. On the .NET side, I adept at writing clean and efficient code, utilizing object-oriented programming principles to create robust and maintainable solutions. Whether it's developing  RESTful APIs or WCF, I am able to leverage the power of .NET to deliver high-quality Application.",
+    "Banner.ActionBtn": "Get in touch",
+    "AboutMe.Title": "About me",
+    "AboutMe.Paragraphs": [
+        "In a <span class='underline'>Role as a developer</span>, I seek to train every day. I have worked writing <span class='underline'>clean code</span> <span class='underline'>unit tests</span>, <span class='underline'>performing continuous integration</span>, and covering backend developer roles with <span class='underline'>.Net, SQL Server or PostgreSQL</span>. With my skills in both TypeScript and C#, I can seamlessly integrate frontend and backend components, ensuring a cohesive and efficient application. I have experience in RESTful API development and can handle data management and integration effortlessly.",
+        "Some of the technologies that I have trained and worked on include (but are not limited to):"
+    ],
+    "Experience.Title": "Experience",
+    "Experience.Jobs": [
+        {
+            "Conpany":"FENDAHL",
+            "Tab": "FENDAHL CTRM & ETRM TECHNOLOGY",
+            "Title": ".Net developer",
+            "Date": "August 2023 - Present",
+            "Description": [
+                "Worked On Product Called <span class='underline'>Fusion</span>",
+                "Developed Knowledge Of C#, Aspnet, WCF, Sql Server And Postgress.",
+                "Implementing continuous improvements, working on backend code with enhancement."
+            ]
+        },
+        
+        {
+            "Conpany":"PRATIAN",
+            "Tab": "PRATIAN TECHNOLOGIES",
+            "Title": "Frontend developer",
+            "Date": "April 2022 - July 2023",
+            "Description": [
+                "Developed and maintained web applications using Angular",
+                "Implementation CI / CD in AWS. Refactoring and optimizing application load times.",
+                "Integration of API requests with RxJS.",
+                "Creation of modules with complex reactive forms",
+                "Improved website performance by optimizing images and implementing caching techniques.",
+                "Collaborated with designers and back-end developers to create responsive and user-friendly web experiences"
+            ]
+        },
+        {
+            "Conpany":"FREELANCER",
+            "Tab": "FREELANCER",
+            "Title": "Independent",
+            "Date": "March 2020 - Present",
+            "Description": [
+                "Worked On Chegg Expert.",
+                "Implementing continuous improvements, working on frontend and backend.",
+                "Creating platforms with Angular and .Net programmed with functional, reactive, and object-oriented programming paradigms.",
+                "Design layout with SASS, Bootstrap, Tailwind Css, etc."
+            ]
+        }
+    ],
+    "FeatureProjects.Title": "Projects that I was a part of and Responsibilities",
+    "FeatureProjects.Label": "Featured Project",
+    "FeatureProjects.Projects": [
+        {
+            "Title": "Fusion",
+            "Description": "Application used to deal with Comodity.",
+            "Responsibilities": [
+                "Worked On Product Fusion.",
+                "Worked On Product Enhancement And Bugs.",
+                "Write Scripts With Enums And Maintained.",
+                "Given Build And Generated Proxy With The Given Chanegs Exposed Methods.",
+                "Worked On Highly Maintained Architecture."
+            ],
+            "Technologies": [
+                "React",
+                "ChartJS",
+                "SASS",
+                "NodeJS",
+                "Python"
+            ]
+        },  
+        {
+            "Title": "Frost",
+            "Description": "Application used to delas with available minerals like propane, butane etc having location of it its manufacturer, products data, manuacturer info and turnover",
+            "Responsibilities": [
+                "Worked On Authentication.",
+                "Integrated Api And Manage Client Deadline.",
+                "Managed The team Of Developer To Meet The Requirement.",
+                "Followed Agile scrum methodology.",
+                "Define solution for the backlogs scoped for the sprint."
+            ],
+            "Technologies": [
+                "React",
+                "ChartJS",
+                "SASS",
+                "NodeJS",
+                "Python"
+            ]
+        },
+        {
+            "Title": " JobCheck",
+            "Description": "JobCheck is a job based mobile application based on real tie mobile application called Naukri including <span class='underline'>blue-coller jobs</span> . Job matching percentage for each jobseeker and candidate matching percentage for search made by recruiter.",
+            "Responsibilities": [
+                "Requirement understanding and interaction with backend team.",
+                "Followed Agile scrum methodology.",
+                "Define solution for the backlogs scoped for the sprint.",
+                "Worked with other developers to ensure that the website is functional and visually appealing.",
+                "Worked on the functionality and Api connectivity in multiple screens.",
+                "Use analytic to test client enjoyment.",
+                "Used angular concept for better performance of the application."
+            ],
+            "Technologies": [
+                "Angular",
+                "Tailwind",
+                "Java",
+                "Mysql",
+                "Azzure & AWS"
+            ]
+        },
+        {
+            "Title": "Posmo",
+            "Description": "An application for <span class='underline'>new entrepreneur</span> new entrepreneur to store their ideas with certain data and <span class='underline'>gain investors</span> with that idea for their project.",
+            "Responsibilities": [
+                "Understanding the requirement specifications & project functionalities",
+                "Worked on the functionality and Api connectivity in multiple screens.",
+                "Solved Authentication Issues.",
+                "Liaise with the client to gauge their needs and expectations.",
+                "Used angular concept for better performance of the application"
+            ],
+            "Technologies": [
+                "Angular",
+                "CSS",
+                "Material",
+                "Python (Flask)"
+            ]
+        },
+        {
+            "Title": "ROS",
+            "Description": "ROS <span class='underline'>Restaurant One Solution </span> An application which is used to provide the end users a flexibility to manage and maintain the basic information of the user and employee to manage and handle the restaurant.",
+            "Responsibilities": [
+                "Equirement understanding and interaction with backend team.",
+                "Followed Agile scrum methodology.",
+                "Define solution for the backlogs scoped for the sprint.",
+                "Worked on the screen development, Functionality and integration with Api’s"
+            ],
+            "Technologies": [
+                "Angular",
+                "CSS",
+                "Angular Material",
+                "Java, PHP."
+            ]
+        }
+    ],
+    "OtherProjects.Title": "More personal projects",
+    "OtherProjects.Projects": [
+        {
+            "Title": "Angular Form Explained",
+            "Description": "Detailed Explaination in Angular template driven and reactive forms.",
+            "ghLink": "https://github.com/Myndband/Angular-Curd",
+            "Technologies": [
+                "Angular",
+                "API",
+                "Bootstrap"
+            ]
+        },
+        {
+            "Title": "Deploy Json On Render",
+            "Description": "Deploy Json Used in angular and react globally  :)",
+            "ghLink": "https://github.com/Myndband/Databases",
+            "Technologies": [
+                "Angular",
+                "NodeJS",
+                "ExpressJS",
+                "Firebase"
+            ]
+        },
+        {
+            "Title": "Dotnet Crud All Operation",
+            "Description": "A Dotnet Web Api Project with get, get by id, put , delete, patch, saveall, delete all operations.",
+            "ghLink": "https://github.com/Myndband/DotNetCrud",
+            "Technologies": [
+                "C#",
+                "dotnet"
+            ]
+        }
+    ],
+    "Contact.Pretitle": "What’s Next",
+    "Contact.Title": "Get in touch!",
+    "Contact.Content": "I will be happy to receive your contact if you want to talk about new opportunities. Write me, and I will reply as soon as I see your message. Simple one-page design that features a profile letter with basic information about a person.",
+    "Contact.Btn": "Say Hello"
+}
