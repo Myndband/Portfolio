@@ -1,8 +1,35 @@
-FROM node:14-alpine
-WORKDIR /usr/src/app
-COPY package*.json ./
+# Author: Vishal B
+# pull official base image
+FROM node:16.14.0-alpine3.14 as build
+
+#working directory of containerized app
+
+WORKDIR /app
+
+#copy the react app to the container
+
+COPY . /app/
+
+#prepare the container for building react
+
 RUN npm install
-COPY . .
+
+# RUN npm install react-search-field --save
+
 RUN npm run build
-CMD ["npm", "run", "serve"]
+
+#prepare nginx
+
+FROM nginx:1.16.0-alpine
+COPY --from=build /app/dist/shilratna_chawhan /usr/share/nginx/html //call your project name 
+
+RUN rm /etc/nginx/conf.d/default.conf
+
+COPY nginx/nginx.conf /etc/nginx/conf.d
+
+#fire for nginx
+
 EXPOSE 80
+
+CMD [ "nginx","-g","daemon off;" ]
+
