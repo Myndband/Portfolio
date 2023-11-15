@@ -21,7 +21,7 @@ RUN npm run build
 #prepare nginx
 
 FROM nginx:1.16.0-alpine
-COPY --from=build /app/dist/shilratna_chawhan /usr/share/nginx/html //call your project name 
+COPY --from=build /app/dist/shilratna /usr/share/nginx/html //call your project name 
 
 RUN rm /etc/nginx/conf.d/default.conf
 
