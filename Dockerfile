@@ -1,26 +1,37 @@
-# Stage 1: Build the Angular app
+# Author: Shilrata Chawhan
+# pull official base image
 FROM node:14 as build
 
+#working directory of containerized app
+
 WORKDIR /app
-COPY package*.json ./
+
+#copy the react app to the container
+
+COPY . /app/
+
+#prepare the container for building angular
 
 RUN npm install
-COPY . .
 
-# Build the Angular app with production configuration
+# RUN npm install
+
 RUN npm run build
-
-# Stage 2: Create a lightweight web server to serve the Angular app
-FROM nginx:alpine
 
 # Remove the default nginx configuration
 RUN rm -rf /usr/share/nginx/html/*
+#prepare nginx
 
-# Copy the built Angular app from the previous stage
+FROM nginx:1.16.0-alpine
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Expose port 80 for the web server
+RUN rm /etc/nginx/conf.d/default.conf
+
+COPY nginx/nginx.conf /etc/nginx/conf.d
+
+#fire for nginx
+
 EXPOSE 80
 
-# Start the nginx web server
-CMD ["nginx", "-g", "daemon off;"]
+CMD [ "nginx","-g","daemon off;" ]
+
