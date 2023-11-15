@@ -1,35 +1,26 @@
-# Author: Vishal B
-# pull official base image
-FROM node:16.14.0-alpine3.14 as build
-
-#working directory of containerized app
+# Stage 1: Build the Angular app
+FROM node:14 as build
 
 WORKDIR /app
-
-#copy the react app to the container
-
-COPY . /app/
-
-#prepare the container for building react
+COPY package*.json ./
 
 RUN npm install
+COPY . .
 
-# RUN npm install react-search-field --save
-
+# Build the Angular app with production configuration
 RUN npm run build
 
-#prepare nginx
+# Stage 2: Create a lightweight web server to serve the Angular app
+FROM nginx:alpine
 
-FROM nginx:1.16.0-alpine
-COPY --from=build /app/dist/shilratna-portfolio /usr/share/nginx/html //call your project name 
+# Remove the default nginx configuration
+RUN rm -rf /usr/share/nginx/html/*
 
-RUN rm /etc/nginx/conf.d/default.conf
+# Copy the built Angular app from the previous stage
+COPY --from=build /app/dist /usr/share/nginx/html
 
-COPY nginx/nginx.conf /etc/nginx/conf.d
-
-#fire for nginx
-
+# Expose port 80 for the web server
 EXPOSE 80
 
-CMD [ "nginx","-g","daemon off;" ]
-
+# Start the nginx web server
+CMD ["nginx", "-g", "daemon off;"]
