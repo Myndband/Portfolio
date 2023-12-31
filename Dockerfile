@@ -1,27 +1,26 @@
-# Author: Vishal B
 # pull official base image
-FROM node:16.14.0-alpine3.14 as build
+FROM node:14 as build
 
 #working directory of containerized app
 
 WORKDIR /app
 
-#copy the react app to the container
+#copy 
 
 COPY . /app/
 
-#prepare the container for building react
+#prepare the container for building 
 
 RUN npm install
 
-# RUN npm install react-search-field --save
+# RUN npm install 
 
 RUN npm run build
 
 #prepare nginx
 
 FROM nginx:1.16.0-alpine
-COPY --from=build /app/dist/PosomScreen /usr/share/nginx/html //call your project name 
+COPY --from=build /app/dist/shilratna-portfolio /usr/share/nginx/html 
 
 RUN rm /etc/nginx/conf.d/default.conf
 
